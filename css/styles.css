@@ -1,0 +1,252 @@
+@font-face {
+    font-family: UTM-Raven;
+    src: url('../fonts/00158-UTM-Raven.ttf');
+}
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.logo {
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+.logo-img {
+    max-width: 200px;
+    height: auto;
+}
+
+.logo-img-2 {
+    max-width: 550px;
+    height: auto;
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+.logo-video {
+    max-width: 450px;
+    height: auto;
+}
+
+.character_header {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.page-section {
+    margin-bottom: 10px;
+}
+
+.no_pad_rl {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logo2 {
+    position: absolute;
+    top: -110px;
+    left: 80px;
+}
+
+.download_bg {
+    height: 462px;
+    background-image: url(../images/download_bg.png);
+    background-repeat: no-repeat;
+    width: 319px;
+}
+
+.download_menu {
+    padding-top: 130px;
+}
+
+.download_item {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.icon_app {
+    height: 55px;
+}
+
+.download_app {
+    margin-left: 30px;
+}
+
+.info_game {
+    margin-top: -100px;
+}
+
+.info_game_fanpage {
+    margin-left: 35px;
+    width: 100%;
+    height: auto;
+}
+
+.img_game_bg {
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 8px solid #3a1001;
+    background: #3a1001;
+}
+
+.img_game {
+    height: 444px;
+    background-image: url(../images/img_game_bg.png);
+    background-repeat: no-repeat;
+    width: 444px;
+}
+
+.icon_help {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 90px;
+}
+
+#character {
+    margin-top: 240px;
+}
+
+#news {
+    margin-top: 80px;
+}
+
+.character_info {
+    margin-top: 50px;
+}
+
+.character_info_bg {
+    background-image: url(../images/character_info_bg.png);
+    background-repeat: no-repeat;
+    width: 389px;
+    height: 564px;
+}
+
+#tieungunhi_img {
+    background-image: url(../images/tieungunhi_icon.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffffff00;
+}
+
+#tieungunhi_img.active {
+    background-image: url(../images/tieungunhi_icon_active.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#tieulyphidao_img {
+    background-image: url(../images/tieulyphidao_icon.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#tieulyphidao_img.active {
+    background-image: url(../images/tieulyphidao_icon_active.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#tieulongnu_img {
+    background-image: url(../images/tieulongnu_icon.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#tieulongnu_img.active {
+    background-image: url(../images/tieulongnu_icon_active.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#giacvien_img {
+    background-image: url(../images/giacvien_icon.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+#giacvien_img.active {
+    background-image: url(../images/giacvien_icon_active.png);
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 128px;
+}
+
+.nav-pills .nav-link {
+    margin-bottom: 20px;
+}
+
+.text_character_name {
+    color: #ffffff;
+    font-family: "UTM-Raven";
+    font-size: 67px;
+    text-align: center;
+}
+
+.text_border_bottom::before {
+    width   : 80%;
+    content : "";
+    position: absolute;
+    left    : 10%;
+    bottom  : 0;
+    height  : 1px;
+    border-bottom: 1px solid transparent;
+    border-image: url(../images/border_text.png) 30 round;
+}
+
+.character_description {
+    height: 350px;
+    color: #ffffff;
+    padding: 20px 0 0 30px;
+}
+
+.character_skill {
+    color: #ffffff;
+    padding: 20px 0 0 30px;
+}
+
+.character_skill > div {
+    margin-bottom: 5px;
+}
+
+.skill_title {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.news_bg {
+    margin-top: 50px;
+    background-image: url(../images/news_bg.png);
+    background-repeat: no-repeat;
+    width: 1236px;
+    height: 805px;
+}
+
+.news_img {
+    margin: 100px 0 0 65px;
+    width: 100%;
+    height: 630px;
+    background: #ffffff;
+}
+
+/* TEST */
+.lightSweep {
+
+}
