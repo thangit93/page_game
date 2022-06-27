@@ -1,6 +1,20 @@
+:root {
+    --animate-duration: 0.6s;
+    --animate-delay: 1s;
+    --lightsweep-duration: 2.5s;
+    --lightsweep-ease: linear;
+    --lightsweep-delay: 1s;
+    --hover-duration: 0.15s;
+    --hover-ease: ease-in;
+}
 @font-face {
     font-family: UTM-Raven;
     src: url('../fonts/00158-UTM-Raven.ttf');
+}
+
+@font-face {
+    font-family: UTM-Cafeta;
+    src: url('../fonts/UTM-Cafeta.ttf');
 }
 
 body {
@@ -56,13 +70,14 @@ body {
 .logo2 {
     position: absolute;
     top: -110px;
-    left: 80px;
+    left: 62px;
 }
 
 .download_bg {
-    height: 462px;
+    height: 408px;
     background-image: url(../images/download_bg.png);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 319px;
 }
 
@@ -76,14 +91,16 @@ body {
 }
 
 .icon_app {
-    height: 55px;
+    height: 50px;
 }
 
 .download_app {
     margin-left: 30px;
+    height: 50px;
 }
 
 .info_game {
+    margin-left: -50px;
     margin-top: -100px;
 }
 
@@ -94,10 +111,11 @@ body {
 }
 
 .img_game_bg {
-    margin-top: 20px;
     margin-left: 50px;
-    border: 8px solid #3a1001;
-    background: #3a1001;
+    background-image: url(../images/event_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 481px;
 }
 
 .top_bg {
@@ -111,21 +129,18 @@ body {
     width: 100%;
 }
 
-.img_game {
-    height: 444px;
-    background-image: url(../images/img_game_bg.png);
-    background-repeat: no-repeat;
-    width: 444px;
+.icon_help {
+    width: 120px;
 }
 
-.icon_help {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-    width: 90px;
+
+.margin-item {
+    margin: 45px 0 45px 0;
+    padding-left: 45px;
 }
 
 #character {
+    position: relative;
     margin-top: 80px;
 }
 
@@ -157,6 +172,62 @@ body {
     background-repeat: no-repeat;
     width: 389px;
     height: 564px;
+}
+
+.menu_right {
+    background-image: url(../images/menu_bg.png);
+    background-repeat: no-repeat;
+    width: 329px;
+    height: 748px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.btn_show_menu {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 325px;
+}
+
+.btn_hide_menu {
+    cursor: pointer;
+    top: 325px;
+    position: absolute;
+    margin-left: 11px;
+}
+
+.menu_right_list {
+    margin: 140px 0 0 20px;
+    
+}
+
+.menu_right_list a {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "UTM-Cafeta";
+    text-decoration: none;
+}
+
+.menu_right ul > li {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_right ul > li:not(:last-child) { 
+    margin-bottom: 52px;  
+ }
+
+.menu_text {
+    margin-left: 15px;
+}
+
+#btn_go_top {
+    margin-left: 60px;
+    cursor: pointer;
 }
 
 .nav-pills .nav-link.active {
@@ -275,6 +346,11 @@ body {
     word-wrap: break-word;
 }
 
+.news_item > a:hover {
+    text-decoration: none;
+    color: #90242b;
+}
+
 .gallery_bg {
     margin-top: 50px;
     background-image: url(../images/gallery_bg.png);
@@ -305,7 +381,54 @@ body {
     left: -50px;
 }
 
+#footer {
+    margin-top: 80px;
+    background-color: #ffffff;
+    height: 300px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.company_logo {
+    margin-top: 25px;
+    width: 200px;
+}
+.game_logo {
+    width: 100px;
+}
+
 /* TEST */
 .lightSweep {
-
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+    -webkit-mask-size: 300% 200%;
+    mask-size: 300% 200%;
+    -webkit-mask-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, #fff 50%, rgba(255, 255, 255, 0) 60%);
+    mask-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, #fff 50%, rgba(255, 255, 255, 0) 60%);
+    -webkit-animation: lightSweep var(--lightsweep-ease) var(--lightsweep-duration) infinite var(--lightsweep-delay);
+    animation: lightSweep var(--lightsweep-ease) var(--lightsweep-duration) infinite var(--lightsweep-delay);
+}
+@-webkit-keyframes lightSweep {
+    from {
+        -webkit-mask-position: 150% 0px;
+        mask-position: 150% 0px;
+    }
+    100% {
+        -webkit-mask-position: 0% 0px;
+        mask-position: 0% 0px;
+    }
+}
+@keyframes lightSweep {
+    from {
+        -webkit-mask-position: 150% 0px;
+        mask-position: 150% 0px;
+    }
+    100% {
+        -webkit-mask-position: 0% 0px;
+        mask-position: 0% 0px;
+    }
 }

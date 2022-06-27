@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -26,6 +27,7 @@
             <div class="row">
                 <div class="col-6">
                     <a href="#" class="">
+                        <img src="./images/text.png" class="logo-img-2"  alt="">
                         <img src="./images/text.png" class="logo-img-2 lightSweep"  alt="">
                     </a>
                 </div>
@@ -92,32 +94,28 @@
                         </div>
                     </div>
                     <div class="row img_game_bg">
-                        <div class="col-7 img_game">
+                        <div class="col-6">
                             <img src="./images/sample_image_game.png" class="img-fluid" alt="">
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <div class="row">
-                                <div class="col-6 no_pad_rl">
+                                <div class="col-6 margin-item">
                                     <a href="#">
-                                        <img src="./images/tanthu_icon.png" class="img-fluid" alt="">
                                         <img src="./images/tanthu_icon_2.png" class="img-fluid icon_help" alt="">
                                     </a>
                                 </div>
-                                <div class="col-6 no_pad_rl">
+                                <div class="col-6 margin-item">
                                     <a href="#">
-                                        <img src="./images/event_icon.png" class="img-fluid" alt="">
                                         <img src="./images/event_icon_2.png" class="img-fluid icon_help" alt="">
                                     </a>
                                 </div>
-                                <div class="col-6 no_pad_rl">
+                                <div class="col-6 margin-item">
                                     <a href="#">
-                                        <img src="./images/vip_icon.png" class="img-fluid" alt="">
                                         <img src="./images/vip_icon_2.png" class="img-fluid icon_help" alt="">
                                     </a>
                                 </div>
-                                <div class="col-6 no_pad_rl">
+                                <div class="col-6 margin-item">
                                     <a href="#">
-                                        <img src="./images/bxh_icon.png" class="img-fluid" alt="">
                                         <img src="./images/bxh_icon_2.png" class="img-fluid icon_help" alt="">
                                     </a>
                                 </div>
@@ -261,6 +259,47 @@
                     </div>
                 </div>
             </div>
+
+            <img src="./images/show_menu_btn.png" style="display: none;" class="btn_show_menu" alt="" srcset="">
+           
+            <div class="menu_right animate__animated ">
+                <img src="./images/hidden_menu_btn.png" class="btn_hide_menu" alt="" srcset="">
+                <ul class="menu_right_list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/trangchu_icon.png" alt="" srcset="">
+                            <span class="menu_text">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/fb_icon.png" alt="" srcset="">
+                            <span class="menu_text">Fanpage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/nap_game_icon.png" alt="" srcset="">
+                            <span class="menu_text">NẠP GAME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/dowload_game_icon.png" alt="" srcset="">
+                            <span class="menu_text">Tải game</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/cskh_icon.png" alt="" srcset="">
+                            <span class="menu_text">Hỗ trợ CSKH</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./images/top_icon.png" id="btn_go_top" alt="" srcset="">
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -352,7 +391,18 @@
         </div>
     </section>
 
-    <section class="page-section" id="footer"></section>
+    <section class="page-section" id="footer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-3">
+                    <img src="./images/company_logo.png" class="company_logo" alt="" srcset="">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo.png" class="game_logo" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="modal fade video_game" tabindex="-1" role="dialog" aria-labelledby="videoGame" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -365,7 +415,7 @@
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
